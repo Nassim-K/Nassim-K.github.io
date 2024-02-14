@@ -1,0 +1,77 @@
+/*!
+ * Portfolio Nassim
+ * Copyright 2024 Nassim Khoujane
+ */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #10151d;
+  color: #bfc7d2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Inter", "sans-serif";
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.banner .test {
+  font-size: 5rem;
+  background: linear-gradient(74deg, #4285f4 0, #9b72cb 9%, #d96570 20%, #d96570 24%, #9b72cb 35%, #4285f4 44%, #9b72cb 50%, #d96570 56%, #10151d 75%, #10151d 100%);
+  background-size: 300% 100%;
+  background-position: 100% 0;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: block;
+  animation: gradient 3s ease forwards;
+  margin-bottom: 0;
+}
+@keyframes gradient {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+.banner .test2 {
+  font-size: 2.5rem;
+  color: rgba(191, 199, 210, 0);
+  display: block;
+  font-weight: 500;
+  margin-top: 25px;
+  margin: 0;
+  animation: test2 1s ease forwards 0.5s;
+}
+@keyframes test2 {
+  0% {
+    color: rgba(191, 199, 210, 0);
+    margin-top: 25px;
+  }
+  100% {
+    color: rgba(191, 199, 210, 0.5);
+    margin-top: 0;
+  }
+}
